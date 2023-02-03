@@ -1,7 +1,11 @@
-package app.kyros.backend;
+package app.kyros.backend.Entity;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,4 +23,7 @@ public class Cliente {
     private String Endereco;
     private String CpfCnpj;
     private String PfPJ;
+
+    @OneToMany(mappedBy="idCliente")
+    List<Lancamento> lancamentos;
 }

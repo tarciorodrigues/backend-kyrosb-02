@@ -22,3 +22,9 @@ $mvn spring-boot:run
 
 # Acesse a documentação do Swagger 
 $ http://localhost:8080/swagger-ui.html#/
+```
+
+## Tela do Swagger
+<p align="center">
+<img alt="Tela do Swagger" src="https://github.com/tarciorodrigues/kyrosb-02-frontend/blob/master/public/swagger.png">
+</p>

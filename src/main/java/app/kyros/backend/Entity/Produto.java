@@ -4,7 +4,7 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,6 +23,6 @@ public class Produto {
     private String Status;
     private int ValorUnidade;
 
-    @OneToMany(mappedBy="idProduto")
+    @ManyToMany(mappedBy="idProduto")
     List<Lancamento> lancamentos;
 }

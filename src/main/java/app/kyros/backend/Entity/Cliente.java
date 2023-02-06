@@ -4,7 +4,7 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,6 +24,6 @@ public class Cliente {
     private String CpfCnpj;
     private String PfPJ;
 
-    @OneToMany(mappedBy="idCliente")
+    @ManyToMany(mappedBy="idCliente")
     List<Lancamento> lancamentos;
 }

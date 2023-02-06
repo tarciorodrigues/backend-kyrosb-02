@@ -24,7 +24,7 @@ $mvn spring-boot:run
 $ http://localhost:8080/swagger-ui.html#/
 ```
 
-## Tela do Swagger
+## Swagger
 <p align="center">
 <img alt="Tela do Swagger" src="https://github.com/tarciorodrigues/kyrosb-02-frontend/blob/master/public/swagger.png">
 </p>
